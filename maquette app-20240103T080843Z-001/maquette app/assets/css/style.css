@@ -29,6 +29,10 @@ body {
     padding: 0.2rem;
 }
 
+#deskdownload p {
+    display: none;
+}
+
 #take-tour {
     background-color: black;
     text-align: center;
@@ -43,13 +47,13 @@ body {
     padding-top: 4rem;
 }
 
-#app1>h1 {
+#app1 h1 {
     color: black;
     font-size: 5rem;
     margin: 1rem 0;
 }
 
-#app1>h2 {
+#app1 h2 {
     color: springgreen;
     font-size: 3rem;
     margin: 1rem 0;
@@ -80,6 +84,12 @@ body {
 
 #app1Btn {
     text-align: center;
+    padding: 1rem;
+
+}
+
+#app1BtnDesk {
+    display: none;
 }
 
 #app1Img {
@@ -91,13 +101,19 @@ body {
     padding: 1rem;
     padding-top: 4rem;
     background-color: rgb(235, 234, 234);
+    display: flex;
 }
 
-#app2>h2 {
+#app2Img5 {
+    display: none;
+}
+
+
+#app2 h2 {
     font-size: 2.5rem;
 }
 
-#app2>h3 {
+#app2 h3 {
     color: red;
     font-size: 3rem;
     margin: 1rem 0;
@@ -260,6 +276,7 @@ body {
     color: aliceblue;
     padding: 1rem;
 }
+
 #footerLogo {
     background-color: rgb(239, 234, 234);
     text-align: center;
@@ -268,4 +285,70 @@ body {
     margin-top: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) {
+    #deskdownload {
+        width: 300px;
+        height: fit-content;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.44);
+    }
+
+    #deskdownload p {
+        display: block;
+    }
+
+    #img-header {
+        flex-direction: row;
+        align-items: center;
+        height: 60vh;
+    }
+
+    #take-tour {
+        height: fit-content;
+        margin: 1rem;
+
+    }
+
+    #app1 {
+        display: flex;
+    }
+
+    #app1Btn {
+        display: none;
+    }
+
+    #app1BtnDesk {
+        padding: 1rem;
+        display: inline-block;
+        background-color: #dddddd;
+    }
+    #app2{
+        display: flex;
+    }
+
+    #app2Img5 {
+        display: inline-block;
+        margin: 2rem;
+    }
+    #cards{
+        display: flex;
+        justify-content: space-between;
+    }
+    #cards>div{
+        width: 48%;
+    }
 }
